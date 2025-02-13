@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아프리카 동물병원에 오신것을 환영합니다.</title>
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./CSS/reset.css" type="text/css">
+
+    <!-- 구글웹폰트 - noto sans kr -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- 공통서식 (글자모양, 크기 ,색상, 링크, :root, 헤더/푸터서식) -->
+    <link rel="stylesheet" href="./CSS/common.css" type="text/css">
+    <!-- 메인페이지 레이아웃 -->
+    <link rel="stylesheet" href="./CSS/main.css" type="text/css">
+    <!-- 기타  - 스와이퍼 슬라이드 서식-->
+    <link rel="stylesheet" href="./CSS/swiper.css" type="text/css">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- 파비콘 -->
+    <link href="./images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+    <!-- 상단 헤더영역 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로바로가기">
+        <img src="./images/logo.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <label for="toggle" class="toggle">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- 모바일 2단내비게이션 -->
+    <nav class="gnb">
+      <label for="toggle" class="close_btn">
+        <i class="fas fa-times"></i>
+      </label>
+      <ul>
+        <li class="sub_menu"><a href="intro.html" title="병원소개">병원소개
+          <i class="fas fa-angle-down"></i>
+        </a>
+          
+          <ul class="sub">
+          <li><a href="intro.html" title="인사말">인사말</a></li>
+
+          <li><a href="intro2.html" title="의료진소개">의료진소개</a></li>
+
+          <li><a href="equipment.html" title="의료장비소개">의료장비소개</a></li>
+
+          <li><a href="tour.html" title="병원둘러보기">병원둘러보기</a></li>
+
+          <li><a href="map.html" title="오시는길">오시는길</a></li>
+
+        </ul>
+        </li>
+
+        <li class="sub_menu"><a href="#" title="진료안내" >진료안내
+          <i class="fas fa-angle-down"></i>
+        </a>
+          
+          <ul class="sub">
+            <li><a href="#" title="외과">외과</a></li>
+            <li><a href="#" title="내과">내과</a></li>
+            <li><a href="#" title="안과">안과</a></li>
+            <li><a href="#" title="치과">치과</a></li>
+            <li><a href="#" title="건강검진">건강검진</a></li>
+          </ul>
+        </li>
+
+        <li class="sub_menu"><a href="#" title="질병안내">질병안내
+          <i class="fas fa-angle-down"></i>
+        </a>
+          <ul class="sub">
+            <li><a href="#" title="증상별 질병">증상별 질병</a></li>
+            <li><a href="#" title="진료 케이스">진료 케이스</a></li>
+          </ul>
+        </li>
+
+        <li class="sub_menu"><a href="center01.html" title="특화센터">특화센터
+          <i class="fas fa-angle-down"></i>
+        </a>
+          <ul class="sub">
+            <li><a href="center01.html" title="내과센터">내과센터</a></li>
+            <li><a href="center02.html" title="외과센터">외과센터</a></li>
+            <li><a href="center03.html" title="영상의학센터">영상의학센터</a></li>
+            <li><a href="center04.html" title="한방재활센터">한방재활센터</a></li>
+            <li><a href="center05.html" title="응급중환자센터">응급중환자센터</a></li>
+          </ul>
+        </li>
+
+        <li class="sub_menu"><a href="sns_qna.html" title="고객지원">고객지원
+          <i class="fas fa-angle-down"></i>
+        </a>
+          <ul class="sub">
+            <li><a href="sns_qna.html" title="sns문의">sns문의</a></li>
+            <li><a href="t_qna.html" title="자주하는 문의">자주하는 문의 </a></li>
+          </ul>
+        </li>
+
+        <li class="sub_menu"><a href="notice.html" title="커뮤니티">커뮤니티
+          <i class="fas fa-angle-down"></i>
+        </a>
+          <ul class="sub">
+            <li><a href="notice.html" title="공지사항">공지사항</a></li>
+            <li><a href="qna.html" title="질문과 답변">질문과 답변</a></li>
+            <li><a href="review.html" title="진료리뷰">진료리뷰</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="fab fa-instagram-square"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-youtube"></i>
+    </nav>
+  </header>
+
+  <!-- 메인 콘텐츠 영역 -->
+  <main>
+    <article class="mslide">
+      <h2 class="mslide_h2">메인슬라이드</h2>
+      <div class="swiper main_slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h2>쾌적한 공간<br>넒은 실내</h2>
+            <a href="#" title="slide1"><img src="./images/slide01.jpg" alt="1"></a>
+          </div>
+          <div class="swiper-slide">
+            <h2>언제나 열려있는<br>23시 아프리카 동물메디컬센터</h2>
+            <a href="#" title="slide2"><img src="./images/slide2.jpg" alt="2"></a>
+          </div>
+          <div class="swiper-slide">
+            <h2>최신 시설장비<br>청결한 병원시설</h2>
+            <a href="#" title="slide3"><img src="./images/slide3.jpg" alt="3"></a>
+          </div>
+        </div>
+        <!-- 컨트롤버튼 -->
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </article>
+
+    <nav class="m_gnb">
+      <ul>
+        <li><a href="#" title="병원소개">
+          <span class="icon">&nbsp;</span>
+          <span class="mnu">병원소개</span>
+          </a></li>
+
+        <li><a href="#" title="의료진소개">
+          <span class="icon">&nbsp;</span>
+          <span class="mnu">의료진소개</span>
+        </a></li>
+
+        <li><a href="#" title="진료과목">
+          <span class="icon">&nbsp;</span>
+          <span class="mnu">진료과목</span>
+        </a></li>
+
+        <li><a href="#" title="특화클리닉">
+          <span class="icon">&nbsp;</span>
+          <span class="mnu">특화클리닉</span>
+        </a></li>
+
+        <li><a href="#" title="장비소개">
+          <span class="icon">&nbsp;</span>
+          <span class="mnu">장비소개</span>
+        </a></li>
+
+        <li><a href="#" title="둘러보기">
+          <span class="icon">&nbsp;</span>
+          <span class="mnu">둘러보기</span>
+        </a></li>
+
+        <li class="map"><a href="#" title="오시는길">
+          <span class="icon">&nbsp;</span>
+          <span class="mnu">오시는길</span>
+        </a></li>
+      </ul>
+    </nav>
+
+    <!-- 연락처 -->
+    <article class="info">
+      <h3><i class="fa-solid fa-phone"></i>둔산점</h3>
+      <p class="tel">
+        <a href="tel:01012345678" title="통화하기">02-0000-0000</a>
+        <a href="tel:01012345678" title="통화하기">02-0000-0000</a>
+      </p>
+      <p>365일 24시 진료(국민연금공단)</p>
+    </article>
+  </main>
+  
+  <!-- 하단 푸터영역 -->
+  <footer>
+    <h2>
+      <a href="index.html" title="메인페이지로바로가기"><img src="./images/f_logo.png" alt="하단로고">
+    </a>
+  </h2>
+
+  <a href="../index.html?move_pc_screen=1" title="PC버전보기" class="pc_btn">PC버전보기</a>
+  <a href="#" title="페이지 상단으로 바로가기" class="t_btn">
+    <i class="fas fa-angle-up"></i>
+  </a>
+    <address>
+      <p>24아프리카동물메디컬센터 &#x007C;대표:000 &#x007C; 사업자번호:000-00-00000</p>
+      <p>대표전화:042-486-7581 &#x007C; 주소: 000 000 00</p>
+      <p>Copyright&copy;2021 아프리카동물메디컬센터. All Rights Reserved.</p>
+    </address>
+
+  </footer>
+
+  <!-- swiper.js -->
+  <script src="./JAVASCRIPT/swiper.js"></script>
+  <script src="./JAVASCRIPT/main.js"></script>
+  <script>
+    //스와이퍼 슬라이드 스크립트 소스
+    var swiper = new Swiper('.main_slide',{
+      spaceBetween:0,
+      effect:'fade',
+      centerSlide:true,
+      autoplay:{
+        delay:3500,
+        desableOnInteraction:false,
+      },
+      pagination:{
+        el:'.swiper-pagination',
+        clickable:true
+      }
+    });
+  </script>
+</body>
+</html>

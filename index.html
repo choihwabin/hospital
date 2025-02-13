@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아프리카 동물메디컬센터</title>
+    
+    <!-- 파비콘 - 즐겨찾기 시 나오는 아이콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- css초기화 -->
+    <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
+    <!-- layout -->
+    <link href="./css/layout.css" type="text/css" rel="stylesheet">
+
+    <!-- 공통서식 common-->
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+
+    <!-- 페이지별 main, sub, login, join, board서식 -->
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+
+    <!-- swiper slide css파일 -->
+    <link href="./css/swiper.css"  rel="stylesheet" type="text/css">
+
+    <!-- 구글웹폰트 - noto sans kr -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- 접속한 사용자의 디바이스종류에 따라 PC index.html가 열릴지, mobile index.html가 열릴지 결정해주는 자바스크립트 소스코드 작성 -->
+    <script>
+      let mobile_keys = new Array('iPhone', 'iPad', 'Android', 'BlackBerry', 'Window CE', 'Window Phone', 'LG', 'MOT', 'SAMSUNG', 'SonyEric', 'Nokia')
+
+      // 모바일 사용자가 pc버전보기를 클릭시 move_pc_screen문자 주소 뒤에 붙은 경우에 스크립트를 동작 안하게 할 수 있다.
+      if(document.URL.match('move_pc_screen')) mobile_keys = null;
+
+      for(i in mobile_keys){ //in키워드 : 키값이 일치한다면 turn값을 반환, 없으면 false
+        if(navigator.userAgent.match(mobile_keys[i])!=null){
+          location.href = 'http://chihwabin.github.io/hospital/m/index.hmtl'; //모바일 홈페이지 주소
+          break; //종료
+        }
+      }
+
+      // 1.pc사용자가 접속시 pc 홈페이지 index.html문서가 연결
+      // 2. pc사용자가 mobile주소로 접속시 m/index.html문서가 연결
+      // 3. mobile사용자가 pc홈페이지 접속시 index.html문서가 연결
+      // 4. mobile홈페이지 하단 'pc버전보기' 클릭시 pc버전 index.html?move_pc_screen가 연결
+    </script>
+</head>
+<body>
+  <!-- 1. 상단 헤더영역 -->
+  <header>
+    <div class="h_inner">
+      <div class="h_top">
+        <nav class="sns">
+          <a href="blog.html" title="블로그"><img src="./images/h_lnb_blog.jpg" alt="블로그"></a>
+
+          <a href="twitter.html" title="트위터"><img src="./images/h_lnb_twitter.jpg" alt="트위터"></a>
+        </nav>
+        <nav class="lnb">
+          <ul>
+            <li><a href="login.html" title="로그인">LOGIN</a></li>
+            <li>&middot;</li>
+            <li><a href="join.html" title="회원가입">JOIN</a></li>
+            <li>&middot;</li>
+            <li><a href="sitemap.html" title="사이트맵">SITEMAP</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="h_bottom">
+        <h1>
+          <a href="index.html" title="메인페이지바로가기"><img src="./images/header_logo.jpg" alt="상단로고"></a>
+        </h1>
+        
+        <!-- 메인내비게이션 -->
+      <div class="navi_wrap">
+        <nav class="gnb">
+          <ul>
+            <li><a href="intro.html" title="병원소개">병원소개</a>
+            <ul class="sub">
+              <li><a href="intro.html" title="인사말">인사말</a></li>
+
+              <li><a href="intro2.html" title="의료진소개">의료진소개</a></li>
+
+              <li><a href="equipment.html" title="의료장비소개">의료장비소개</a></li>
+
+              <li><a href="tour.html" title="병원둘러보기">병원둘러보기</a></li>
+
+              <li><a href="map.html" title="오시는길">오시는길</a></li>
+
+            </ul>
+            </li>
+
+            <li><a href="#" title="진료안내" >진료안내</a>
+              <ul class="sub">
+                <li><a href="#" title="외과">외과</a></li>
+                <li><a href="#" title="내과">내과</a></li>
+                <li><a href="#" title="안과">안과</a></li>
+                <li><a href="#" title="치과">치과</a></li>
+                <li><a href="#" title="건강검진">건강검진</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#" title="질병안내" >질병안내</a>
+              <ul class="sub">
+                <li><a href="#" title="증상별 질병">증상별 질병</a></li>
+                <li><a href="#" title="진료 케이스">진료 케이스</a></li>
+              </ul>
+            </li>
+
+            <li><a href="center01.html" title="특화센터">특화보센터</a>
+              <ul class="sub">
+                <li><a href="center01.html" title="내과센터">내과센터</a></li>
+                <li><a href="center02.html" title="외과센터">외과센터</a></li>
+                <li><a href="center03.html" title="영상의학센터">영상의학센터</a></li>
+                <li><a href="center04.html" title="한방재활센터">한방재활센터</a></li>
+                <li><a href="center05.html" title="응급중환자센터">응급중환자센터</a></li>
+              </ul>
+            </li>
+
+            <li><a href="sns_qna.html" title="고객지원" >고객지원</a>
+              <ul class="sub">
+                <li><a href="sns_qna.html" title="sns문의">sns문의</a></li>
+                <li><a href="t_qna.html" title="자주하는 문의">자주하는 문의 </a></li>
+              </ul>
+            </li>
+
+            <li><a href="notice.html" title="커뮤니티" >커뮤니티</a>
+              <ul class="sub">
+                <li><a href="notice.html" title="공지사항">공지사항</a></li>
+                <li><a href="qna.html" title="질문과 답변">질문과 답변</a></li>
+                <li><a href="review.html" title="진료리뷰">진료리뷰</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  </header>
+  <!-- 2. 메인 콘텐츠영역 -->
+  <main>
+    <article class="slide">
+      <div class="swiper mslide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드1">
+              <img src="./images/visula01.jpg" alt="24시 동물 응급센터">
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드2">
+              <img src="./images/visual_02.jpg" alt="24시 동물 응급센터">
+            </a>
+          </div>
+          
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드3">
+              <img src="./images/visual2_03.jpg" alt="24시 동물 응급센터">
+            </a>
+          </div>
+        <!-- <div class="swiper-prev"></div> -->
+        <!-- <div class="swiper-next"></div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </article>
+
+    <div class="c_wrap">
+      <section class="c01">
+        <h2>aamc news</h2>
+        <ul class="new_list">
+          <li><a href="news1.html" title="수의사 인터뷰">가곡 초등학교 동물병원 견학&amp; 수의사 인터뷰</a></li>
+          <li><a href="news2.html" title="무료주차안내">무료주차안내</a></li>
+          <li><a href="news3.html" title="춘계광견병접종기간안내">2023 춘계광견병 관납접종 기간안내</a></li>
+          <li><a href="news4.html" title="리모델링완료">강아지/고양이 호텔 리모델링 완료</a></li>
+          <li><a href="news5.html" title="잡지 매거진">잡지 매거진 2월호 : 노령견을 위...</a></li>
+        </ul>
+
+        <article class="info">
+          <h2>진료시간안내</h2>
+          <img src="./images/a_cs_tel.jpg" alt="전화문의">
+          <img src="./images/a_cs_time.jpg" alt="진료시간">
+        </article>
+      </section>
+
+      <section class="c02">
+        <h2>aamc 진료케이스</h2>
+        <img src="./images/a_center_con.jpg" alt="진료케이스">
+
+        <article class="medical">
+          <h3>진료안내</h3>
+          <ul class="medical_list">
+            <li><a href="#" title="정형외과"><img src="./images/subject_bn01.gif" alt="정형외과"></a></li>
+            <li><a href="#" title="종양센터"><img src="./images/subject_bn02.gif" alt="종양센터"></a></li>
+            <li><a href="#" title="치과"><img src="./images/subject_bn03.gif" alt="치과"></a></li>
+            <li><a href="#" title="신경계 경력 클리닉"><img src="./images/subject_bn04.gif" alt="신경계 경력 클리닉"></a></li>
+            <li><a href="#" title="호르몬 클리닉"><img src="./images/subject_bn05.gif" alt="호르몬 클리닉"></a></li>
+            <li><a href="#" title="피부과 알러지 클리닉"><img src="./images/subject_bn06.gif" alt="피부과 알러지 클리닉"></a></li>
+            <li><a href="#" title="신장병 센터"><img src="./images/subject_bn07.gif" alt="신장병 센터"></a></li>
+            <li><a href="#" title="영상진단센터"><img src="./images/subject_bn08.gif" alt="영상진단센터"></a></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="c03">
+        <h2>배너광고</h2>
+        <a href="#" title="배너1"><img src="./images/a_left_banner01.jpg" alt=""></a>
+        <a href="#" title="배너2"><img src="./images/a_left_banner02.jpg" alt=""></a>
+        <a href="#" title="배너3"><img src="./images/a_left_banner03.jpg" alt=""></a>
+
+      </section>
+    </div>
+  </main>
+  <!-- 3. 하단 푸터영역 -->
+  <footer>
+    <div class="f_inner">
+      <h2><a href="index.html" title="메인페이지바로가기"><img src="./images/footer_logo.jpg" alt="하단로고"></a></h2>
+
+      <nav>
+        <a href="#" title="이용약관">이용약관</a>
+        <a href="#" title="개인정보처리방침">개인정보처리방침</a>
+      </nav>
+
+      <address>
+        <p>아프리카 동물 메디컬센터 &#x007C;
+          서울특별시 강서구 등촌동 000-0 &#x007C;
+          대표원장 000
+        </p>
+        <p>Copyright&copy;2025 아프리카 동물 메디컬센터 allrights reserved.</p>
+      </address>
+    </div>
+    
+  </footer>
+
+  <!-- swiper script 파일 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    var swiper = new Swiper('.mslide',{
+      spaceBetween:0,
+      centeredSlides:true,
+      autoplay:{delay:3000,
+      disableOnInteraction:false,
+      },
+      pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+      },
+      effect:'fade'
+    });
+  </script>
+</body>
+</html>

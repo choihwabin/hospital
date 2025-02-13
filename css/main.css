@@ -1,0 +1,54 @@
+@charset "utf_8";
+
+/* main.css */
+.slide{width: 100%;}
+.slide img{width: 100%;}
+.mslide{
+    position: relative;
+}
+
+.swiper-pagination-bullet{
+  display: inline-block !important;
+  width: 50px !important; height: 6px !important;
+  border-radius: 0px !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #ff0 !important; 
+}
+
+/* 1단 뉴스목록, 2단 제목서식 */
+.c01 > h2, .info > h2, .c02 > h2{
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--a_color);
+  border-bottom: 1px solid var(--a_color);
+  padding: 15px 0px 10px 0px;
+  text-transform: uppercase;
+}
+.new_list{padding-top: 10px;
+  padding-bottom: 40px;
+}
+.new_list > li {
+  text-indent: 10px;
+}
+.new_list > li > a{
+  line-height: 25px;
+}
+.new_list > li > a:hover{
+  text-decoration: underline;
+}
+
+/* 2단 서식 */
+.c02 h3{display: none;}
+.medical{
+  width: 320px;
+  margin: 0 auto;
+}
+.medical_list{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, 85px);
+}
+
+/* 3단 서식 */
+.c03 > h2{display: none;}
